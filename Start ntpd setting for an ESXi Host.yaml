@@ -1,9 +1,9 @@
 ---
 - name: Start ntpd setting for an ESXi Host
-    hostname: '{{ 152.168.34.209 }}'
-    username: '{{ root }}'
-    password: '{{ @Sc1video }}'
-    esxi_hostname: '{{ 152.168.34.209 }}'
+    hostname: '{{ enter_hostname }}'
+    username: '{{ enter_usernmae }}'
+    password: '{{ enter_passowrd }}'
+    esxi_hostname: '{{ enter_hostname }}'
     service_name: ntpd
     state: present
   delegate_to: localhost
